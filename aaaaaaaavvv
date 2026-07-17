@@ -1,6 +1,6 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 setfpscap(10)
-script_key = "";
+script_key = "atFlIwKgKYnmDxSWxdvUOQuQXiwlyKQl";
 getgenv().UserConfig = {
     ["FPS Cap"] = 10,
     ["Auto Buy Seed"] = true,
