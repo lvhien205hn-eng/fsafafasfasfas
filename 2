@@ -8,7 +8,7 @@ getgenv().UserConfig = {
     ["Limit Plant Seed"] = {
     },
     ["Limit Buy Seed"] = {
-        ["Carrot"] = 9999, 
+        ["Carrot"] = 999, 
         ["Strawberry"] = 2,
         ["Blueberry"] = 2,
         ["Tulip"] = 5,
@@ -45,11 +45,19 @@ getgenv().UserConfig = {
         ["Horned Melon"] = {},
     },
     ["Buy Pets"] = {
-        ["Raccoon"] = 1,
-  
+        ["Frog"] = {Huge = 0, Rainbow = 0},
+        ["Owl"] = {Huge = 0, Rainbow = 0},
+        ["Deer"] = {Huge = 0, Rainbow = 0},
+        ["Robin"] = {Big = 0, Huge = 0, Rainbow = 0},
+        ["Bee"] = {Big = 0, Huge = 0, Rainbow = 0},
+        ["Raccoon"] = 999,
+         ["Unicorn"] = 0,
+        ["Golden Dragonfly"] = 0,
+        ["Firefly "] = 0,
+
     },
     ["Equip Pets"] = {
-        {"Unicorn", 6, 1},
+        {"Bunny", 6, 1},
     },
     ["Expand Plot"] = true,
     ["Plot Expansions"] = 3,
@@ -95,12 +103,8 @@ getgenv().UserConfig = {
     ["Auto Plant"] = true,
     ["Blacklist Shovel"] = {"Rainbow", "Gold","Mega", "Dragon's Breath", "Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple","Hypno Bloom", "Pomegranate", "Venus Fly Trap"},
     ["Shovel Plant Once"] = {
-    "Carrot",
-    "Strawberry",
-    "Blueberry",
-    "Tulip",
     },
     ["Limit Auto Plant"] = 800,
-    ["Blacklist Seed"] = {"Pineapple","Dragon's Breath","Rocket Pop","Mushroom","Hyno Bloom","Moon Bloom","Star Fruit","Sun Bloom",}
+    ["Blacklist Seed"] = {}
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/979cba1a5b965fbc24d274454049b447.lua"))()
