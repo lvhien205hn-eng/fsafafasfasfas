@@ -45,7 +45,8 @@ getgenv().UserConfig = {
         ["Horned Melon"] = {},
     },
     ["Buy Pets"] = {
-        ["Raccoon"] = 1,
+        ["Raccoon"] = 999,
+
     },
     ["Equip Pets"] = {
         {"Bunny", 6, 1},
