@@ -19,7 +19,7 @@ getgenv().UserConfig = {
         -- Giới hạn số lượng từng loại hạt giống được phép trồng tự động trên đất
 	-- không dùng tới nên đừng qtam chỗ này
         ["Carrot"] = 50, 
-            },
+    },
     ["Limit Buy Seed"] = {
         -- Giới hạn số lượng từng loại hạt giống được phép mua tự động trong cửa hang
 	-- Xoá bớt dòng tên hạt không cần nếu muốn tiết kiệm sheckles
@@ -53,19 +53,12 @@ getgenv().UserConfig = {
     },
 	["Harvest Mutation Only"] = {}, -- Danh sách chỉ thu hoạch khi có đột biến (Mutation)
     ["Favorite"] = {}, -- Danh sách mục yêu thích
-  ["Buy Pets"] = {
+    ["Buy Pets"] = {
 
-    },
-        -- Mythic
-        ["Fox"] = 999,
-        ["Wolf"] = 999,
-
-        -- Super
-        ["Shadow Dragon"] = 999,
     },
 	["Equip Pets"] = {
-		{"Swan", 6, 1} -- Tự động trang bị pet Unicorn
-			},
+		{"Swan", 6, 1} -- Tự động trang bị pet Swan
+	},
 	["Sell Pets"] = {
         -- Cấu hình tự động bán pet (Thêm dấu `--` ở đầu để tạm tắt)
 		-- ["Frog"] = {Normal = 6},
@@ -78,13 +71,6 @@ getgenv().UserConfig = {
     ["Merge Eclipse Bloom"] = true, -- Tự động gộp hoa Eclipse Bloom
     ["Gears"] = {
         ["Buy Gear"] = {
-		--	["Trowel"] = 500,
-         	--	["Syrup Watering Can"] = 500,
-		--	["Syrup Sprinkler"] = 500,
-		--	["Harp"] = 100, -- Mua đàn Harp
-		--	["Bull Horn"] = 100, -- Mua kèn Bull Horn
-		--	["Rare Magic Mail"] = 100,
-		--	["Legendary Magic Mail"] = 100,
 			["Super Syrup Sprinkler"] = 100, -- Mua vòi si-rô siêu cấp
 			["Super Syrup Watering Can"] = 100, -- Mua bình tưới si-rô siêu cấp
 			["Super Magic Mail"] = 100,
@@ -93,7 +79,7 @@ getgenv().UserConfig = {
             "Trowel", -- Sử dụng xẻng nhỏ
             "Syrup Watering Can", -- Sử dụng bình tưới nước thường
             "Syrup Sprinkler", -- Sử dụng vòi nước thường
-                },
+        },
     },
 	-- [ THÔNG BÁO DISCORD - WEBHOOK ]
     ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- Link Webhook Discord nhận thông báo Pet
@@ -108,45 +94,29 @@ getgenv().UserConfig = {
     ["Webhook Note"] = "Enter_Your_Name", -- Ghi chú tên của bạn trên Webhook
     ["Discord ID"] = "Enter_Your_Discord_ID", -- ID Discord của bạn để tag
 	
-	-- [ TÍNH NĂNG GỬI THƯ (MAIL) ]
-    ["Mail To Username"] = {"Enter_Main_Account_Username"}, -- Tên tài khoản chính nhận đồ
+	-- [ TÍNH NĂNG GỬI THƯ (MAIL) - Đã dọn trống ]
+    ["Mail To Username"] = {}, 
     ["Items To Mail"] = {
-		["Pet"] = {
-            ["Fox"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Wolf"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Shadow Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Enter_Receiver_Username"},
-        },
-        ["Seed"] = {
-            ["Rainbow"] = {Amount = 2, To = "Enter_Receiver_Username"},
-            ["Gold"] = {Amount = 10, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Mega"] = {Amount = 3, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Maple Pomegranate"] = {Amount = 50, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Maple Venus Fly Trap"] = {Amount = 1, To = "Enter_Receiver_Username"},
-        },
-        ["Gear"] = {
-            ["Super Syrup Sprinkler"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Super Syrup Watering Can"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Super Magic Mail"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-        },
-		["Other"] = {
-            
-        },
+		["Pet"] = {},
+        ["Seed"] = {},
+        ["Gear"] = {},
+		["Other"] = {},
     },
     ["Claim Mail"] = true, -- Tự động nhận thư gửi đến
 	
 	-- [ CẤU HÌNH NÂNG CAO ]
     ["Auto Plant"] = true, -- Bật tự động trồng cây
     ["Limit Auto Plant"] = 800, -- Giới hạn số lượng trồng tự động tối đa (800)
-    ["Blacklist Seed"] = {"Amber Cranberry"}, -- Danh sách hạt giống bị cấm (Đã fix thêm dấu phẩy ở cuối dòng để tránh lỗi script)
+    ["Blacklist Seed"] = {"Amber Cranberry"}, -- Danh sách hạt giống bị cấm
     ["Blacklist Shovel"] = {
         -- Danh sách các loại cây cấm dùng xẻng xúc theo cấp độ
-	"Maple Venus Fly Trap", 
-	"Maple Pomegranate",
-	"Maple Poison Apple",
-	"Maple Venom Spitter",
-	"Conifer Cone",
-	"Atlantic Giant Pumpkin",
-	"Amber Cranberry"
+        "Maple Venus Fly Trap", 
+        "Maple Pomegranate",
+        "Maple Poison Apple",
+        "Maple Venom Spitter",
+        "Conifer Cone",
+        "Atlantic Giant Pumpkin",
+        "Amber Cranberry"
     },
     ["Shovel Plant Once"] = { -- Cấu hình xúc cây 1 lần
         
